@@ -1,0 +1,20 @@
+{
+  "name": "ahj-helpdesk-7_backend",
+  "version": "1.0.0",
+  "description": "helpdesk backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever ./src/server.js",
+    "watch": "forever -w ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander B",
+  "license": "ISC",
+  "devDependencies": {
+    "forever": "^4.0.3",
+    "koa": "^2.14.2",
+    "koa-body": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^9.0.1"
+  }
+}
