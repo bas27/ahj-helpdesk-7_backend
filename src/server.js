@@ -96,6 +96,8 @@ app.use(async (ctx) => {
       // console.log('formData.status:', formData.status, typeof formData.status);
       tickets.push(formData);
       // console.log('tickets:', tickets);
+      ctx.response.body = { success: true, newTicket: formData };
+      ctx.response.type = 'application/json';
       return;
     case 'changeTicketStatus':
       const ticketId = tickets.find((ticket) => ticket.id === ctx.request.body.id);
